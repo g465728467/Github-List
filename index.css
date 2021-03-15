@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    text-decoration: none;
+}
+html,body{
+    height: 100%;
+}
+a{
+    color: black
+}
+a:active{
+    color: black;
+}
+main{
+    height: calc(100% - 50px);
+}
+section{
+    display: none;
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.cover{
+    opacity: 0.3;
+}
+.card{
+    margin: 20px 15px 0 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.card a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.card .number{
+    flex: 0 0;
+    background-color:#0DB72B;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 15px;
+    padding: 5px 7px;
+    border-radius: 4px;
+}
+.cardInfo p{
+    font-size: 0.9rem
+}
+.cardInfo h2{
+    font-size: 1.2rem
+}
+.cardInfo span{
+    font-size: 0.7rem;
+    color: gray;
+}
+.user-content img{
+    margin-right: 15px;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+}
+.searchview{
+    display: flex;
+    margin: 20px 15px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+input{
+    flex: 1;
+    height: 2rem;
+    border: none;
+    outline: none;
+    border-radius: 4px 0 0 4px;
+    background-color: #eee;
+    padding-left: 10px;
+}
+.searchview span{
+    position: relative;
+    flex: 0 0;
+    box-sizing: border-box;
+    margin-left: -15px;
+    height: 2rem;
+    width: 4rem;
+    background-color: red;
+    color: #fff;
+    padding: 9px;
+    border-radius:4px;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+.active{
+    display: block;
+}
+.selected{
+    color: red;
+}
+.loading{
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: 1s load linear infinite; 
+}
+.icon-LoadingIndicator{
+    font-size: 32px !important;
+}
+@keyframes load{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg);  }
+}
+footer{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+footer div{
+    flex-grow: 1;
+    text-align: center;
+}
+footer span{
+    display: block;
+    padding: 1px;
+}
